@@ -313,10 +313,15 @@ section{
 
 .hero-message span{
     display:block;
-    font-size:5rem;
-    font-weight:800;
+    color:rgba(255,255,255,0.08);
+    font-size:4.6rem;
+    font-weight:900;
     line-height:0.95;
-    color:rgba(255,255,255,0.12);
+    letter-spacing:-2px;
+    text-transform:uppercase;
+    text-shadow:none;
+    filter:none;
+    opacity:1;
 }
 
 /* =========================================================
