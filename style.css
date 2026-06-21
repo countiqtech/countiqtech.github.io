@@ -304,10 +304,8 @@ section{
 
 .hero-message{
     position:absolute;
-    right:3%;
+    right:5%;
     top:50%;
-    z-index:1;
-    max-width:600px;
     transform:translateY(-50%);
     text-align:right;
     pointer-events:none;
@@ -315,16 +313,10 @@ section{
 
 .hero-message span{
     display:block;
-    color:rgba(255,255,255,0.055);
-    font-size:4.6rem;
-    font-weight:900;
+    font-size:5rem;
+    font-weight:800;
     line-height:0.95;
-    letter-spacing:-2px;
-    text-transform:uppercase;
-}
-
-.hero-message span:nth-child(2){
-    color:rgba(147,197,253,0.075);
+    color:rgba(255,255,255,0.12);
 }
 
 /* =========================================================
