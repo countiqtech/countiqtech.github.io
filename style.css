@@ -1707,3 +1707,192 @@ footer,
         justify-content:center;
     }
 }
+
+/* =========================================================
+   COUNTIQ NEW CREDIBILITY SECTIONS
+   ========================================================= */
+
+.counting-numbers-section{
+    background:#ffffff;
+}
+
+.numbers-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:24px;
+    margin-top:45px;
+}
+
+.number-card{
+    padding:30px 26px;
+    border:1px solid #e2e8f0;
+    border-radius:20px;
+    background:#ffffff;
+    box-shadow:0 10px 28px rgba(15,23,42,0.05);
+    transition:0.3s ease;
+}
+
+.number-card:hover{
+    transform:translateY(-6px);
+    border-color:#bfdbfe;
+}
+
+.number-card h3{
+    margin-bottom:12px;
+    color:#1D4ED8;
+    font-size:1.2rem;
+}
+
+.number-card p{
+    color:#475569;
+    line-height:1.75;
+}
+
+/* Workflow Comparison */
+
+.workflow-comparison-section{
+    background:#f8fafc;
+}
+
+.comparison-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:32px;
+    margin-top:45px;
+}
+
+.comparison-card{
+    padding:38px;
+    border-radius:24px;
+    background:#ffffff;
+    border:1px solid #e2e8f0;
+    box-shadow:0 14px 35px rgba(15,23,42,0.06);
+}
+
+.comparison-card h3{
+    margin-bottom:22px;
+    font-size:1.6rem;
+}
+
+.comparison-card ul{
+    list-style:none;
+}
+
+.comparison-card li{
+    position:relative;
+    margin-bottom:16px;
+    padding-left:28px;
+    color:#475569;
+    line-height:1.7;
+}
+
+.comparison-card li::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:10px;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#1D4ED8;
+}
+
+.traditional h3{
+    color:#0f172a;
+}
+
+.assisted{
+    border-color:#bfdbfe;
+    background:linear-gradient(135deg, #eff6ff, #ffffff);
+}
+
+.assisted h3{
+    color:#1D4ED8;
+}
+
+/* Development Status */
+
+.development-status-section{
+    background:#ffffff;
+}
+
+.status-timeline{
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    gap:18px;
+    margin-top:45px;
+}
+
+.status-item{
+    padding:24px 18px;
+    border-radius:18px;
+    border:1px solid #e2e8f0;
+    text-align:center;
+    background:#ffffff;
+}
+
+.status-item span{
+    display:inline-flex;
+    width:38px;
+    height:38px;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:14px;
+    border-radius:50%;
+    font-weight:800;
+}
+
+.status-item.done span{
+    background:#dcfce7;
+    color:#059669;
+}
+
+.status-item.active span{
+    background:#dbeafe;
+    color:#1D4ED8;
+}
+
+.status-item.upcoming span{
+    background:#f1f5f9;
+    color:#64748b;
+}
+
+.status-item p{
+    color:#334155;
+    font-weight:700;
+    line-height:1.5;
+}
+
+.medical-disclaimer{
+    margin-top:42px;
+    padding:24px 28px;
+    border-left:5px solid #1D4ED8;
+    border-radius:16px;
+    background:#eff6ff;
+    color:#334155;
+    line-height:1.8;
+}
+
+/* Mobile */
+
+@media(max-width:1000px){
+    .numbers-grid,
+    .status-timeline{
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    .comparison-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+    .numbers-grid,
+    .status-timeline{
+        grid-template-columns:1fr;
+    }
+
+    .comparison-card{
+        padding:28px 24px;
+    }
+}
