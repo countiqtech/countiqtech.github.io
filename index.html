@@ -5,357 +5,454 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>SurgiCount | Intelligent Surgical Item Accountability</title>
-
   <meta name="description"
-        content="SurgiCount by CountIQ Technologies LLP is an AI-assisted surgical item accountability system being developed to support surgical item visibility through vision, sensing, and real-time operating-room monitoring.">
+        content="SurgiCount by CountIQ Technologies LLP is an AI-assisted surgical item accountability platform being developed for greater visibility and confidence in surgical counting workflows.">
 
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="preload" as="image" href="assets/surgicount/overview.jpeg">
   <link rel="stylesheet" href="style.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
 
-<header class="navbar" id="navbar">
-  <a class="brand" href="#home" aria-label="CountIQ home">
-    <img src="logo.png" alt="CountIQ Technologies Logo" class="logo">
-  </a>
+<header class="site-header" id="siteHeader">
+  <div class="nav-shell">
+    <a class="brand" href="#home" aria-label="CountIQ home">
+      <img src="logo.png" alt="CountIQ Technologies">
+    </a>
 
-  <nav class="desktop-nav" aria-label="Primary navigation">
-    <a href="#home">Home</a>
-    <a href="#system">SurgiCount</a>
-    <a href="#progress">Progress</a>
-    <a href="#company">CountIQ</a>
-  </nav>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#vision">Why SurgiCount</a>
+      <a href="#platform">Platform</a>
+      <a href="#progress">Progress</a>
+      <a href="#company">Company</a>
+    </nav>
 
-  <a class="nav-cta"
-     href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=founder@countiq.in&amp;su=SurgiCount%20Discussion"
-     target="_blank"
-     rel="noopener noreferrer">
-    Start a Conversation
-  </a>
+    <a class="header-cta"
+       href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=founder@countiq.in&amp;su=SurgiCount%20Discussion"
+       target="_blank"
+       rel="noopener noreferrer">
+      Start a Conversation
+    </a>
 
-  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
+    <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
 
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#home">Home</a>
-    <a href="#system">SurgiCount</a>
-    <a href="#progress">Progress</a>
-    <a href="#company">CountIQ</a>
-    <a href="#contact">Contact</a>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#vision">Why SurgiCount</a>
+      <a href="#platform">Platform</a>
+      <a href="#progress">Progress</a>
+      <a href="#company">Company</a>
+      <a href="#contact">Contact</a>
+    </div>
   </div>
 </header>
 
 <main>
 
+  <!-- ======================================================
+       HERO
+       ====================================================== -->
   <section class="hero" id="home">
-    <div class="hero-copy">
-      <span class="eyebrow">CountIQ Technologies presents</span>
+    <div class="hero-inner">
 
-      <h1>SurgiCount<span>™</span></h1>
+      <div class="hero-copy">
+        <p class="overline">CountIQ Technologies presents</p>
 
-      <h2>Every Item. Accounted For.</h2>
+        <h1>SurgiCount<span>™</span></h1>
 
-      <p>
-        An AI-assisted surgical item accountability system being developed to bring
-        greater visibility and real-time support to surgical counting workflows.
-      </p>
+        <h2>Every item.<br>Accounted for.</h2>
 
-      <div class="hero-actions">
-        <a href="#system" class="btn btn-primary">Explore SurgiCount</a>
+        <p class="hero-lead">
+          An AI-assisted surgical item accountability platform being developed
+          to bring greater visibility, verification, and real-time awareness
+          to the surgical counting workflow.
+        </p>
 
-        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=founder@countiq.in&amp;su=SurgiCount%20Discussion"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="btn btn-secondary">
-          Start a Conversation
-        </a>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#platform">Explore SurgiCount</a>
+
+          <a class="button button-quiet"
+             href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=founder@countiq.in&amp;su=SurgiCount%20Discussion"
+             target="_blank"
+             rel="noopener noreferrer">
+            Talk to CountIQ
+          </a>
+        </div>
+
+        <p class="status-line">
+          <span></span>
+          Prototype build &amp; pilot preparation
+        </p>
       </div>
 
-      <span class="development-note">
-        Prototype build &amp; pilot preparation
-      </span>
-    </div>
+      <div class="hero-visual">
+        <div class="hero-stage">
+          <div class="stage-label">SURGICOUNT / PRODUCT CONCEPT</div>
+          <img src="assets/surgicount/overview.jpeg"
+               alt="SurgiCount surgical accountability platform">
+        </div>
+      </div>
 
-    <div class="hero-product">
-      <div class="product-glow"></div>
-      <img src="assets/surgicount/overview.jpeg"
-           alt="SurgiCount surgical accountability platform render"
-           class="hero-device">
     </div>
   </section>
 
 
-  <section class="statement-section" id="problem">
-    <div class="statement-wrap">
-      <span class="section-kicker light-kicker">Why we started</span>
+  <!-- ======================================================
+       WHY
+       ====================================================== -->
+  <section class="vision-section" id="vision">
+    <div class="content-width">
 
-      <h2>
-        Surgical counting hasn't changed enough.
-        <strong>We're working to change that.</strong>
-      </h2>
+      <p class="overline overline-light">Why SurgiCount</p>
 
-      <p>
-        Surgical teams must account for instruments, needles, sponges, gauze, and other
-        materials introduced during a procedure. In complex operating rooms, accurate
-        counting still depends heavily on repeated manual verification and team coordination.
-      </p>
+      <div class="vision-grid">
+        <h2>
+          Surgical counting is essential.
+          <strong>Visibility should be stronger.</strong>
+        </h2>
 
-      <div class="statement-links">
-        <a href="https://psnet.ahrq.gov/primer/retained-surgical-items-definition-and-epidemiology"
-           target="_blank" rel="noopener noreferrer">AHRQ PSNet ↗</a>
-        <a href="https://www.facs.org/about-acs/statements/prevention-of-unintentionally-retained-surgical-items-after-surgery/"
-           target="_blank" rel="noopener noreferrer">American College of Surgeons ↗</a>
-        <a href="https://www.who.int/teams/integrated-health-services/patient-safety/research/safe-surgery"
-           target="_blank" rel="noopener noreferrer">WHO Safe Surgery ↗</a>
+        <div class="vision-copy">
+          <p>
+            Surgical teams must account for instruments, needles, sponges,
+            gauze, and other items introduced during a procedure.
+          </p>
+
+          <p>
+            SurgiCount is being developed as an additional technology-supported
+            layer of visibility around existing counting practices — not as a
+            replacement for clinical judgement or established safety protocols.
+          </p>
+
+          <div class="source-row">
+            <a href="https://psnet.ahrq.gov/primer/retained-surgical-items-definition-and-epidemiology"
+               target="_blank" rel="noopener noreferrer">AHRQ PSNet ↗</a>
+            <a href="https://www.facs.org/about-acs/statements/prevention-of-unintentionally-retained-surgical-items-after-surgery/"
+               target="_blank" rel="noopener noreferrer">American College of Surgeons ↗</a>
+            <a href="https://www.who.int/teams/integrated-health-services/patient-safety/research/safe-surgery"
+               target="_blank" rel="noopener noreferrer">WHO Safe Surgery ↗</a>
+          </div>
+        </div>
       </div>
+
     </div>
   </section>
 
 
-  <section class="system-section" id="system">
-    <div class="section-heading centered">
-      <span class="section-kicker">Meet SurgiCount</span>
-      <h2>A physical platform built around surgical accountability.</h2>
-      <p>
-        SurgiCount is being designed as a mobile operating-room platform that combines
-        computer vision, intelligent sensing, and real-time workflow visibility.
-      </p>
-    </div>
+  <!-- ======================================================
+       PLATFORM
+       ====================================================== -->
+  <section class="platform-section" id="platform">
+    <div class="content-width">
 
-    <div class="system-showcase">
-      <div class="system-image">
-        <img src="assets/surgicount/overview.jpeg"
-             alt="SurgiCount exterior product render">
+      <div class="section-head">
+        <p class="overline">The platform</p>
+        <h2>Designed around the surgical workflow.</h2>
+        <p>
+          One mobile platform combining computer vision, intelligent sensing,
+          and real-time accountability support.
+        </p>
       </div>
 
-      <div class="system-points">
-        <article>
-          <span>01</span>
-          <div>
-            <h3>AI-Assisted Visibility</h3>
-            <p>Computer vision supports identification and monitoring within designated accountability zones.</p>
-          </div>
-        </article>
+      <div class="platform-layout">
 
-        <article>
-          <span>02</span>
-          <div>
-            <h3>Intelligent Sensing</h3>
-            <p>Integrated sensing provides an additional layer of physical item-awareness during the workflow.</p>
+        <div class="product-frame">
+          <div class="product-frame-top">
+            <span>SurgiCount</span>
+            <span>Exterior concept render</span>
           </div>
-        </article>
 
-        <article>
-          <span>03</span>
-          <div>
-            <h3>Real-Time Accountability</h3>
-            <p>Counts, item status, and discrepancy awareness are brought into one continuous view.</p>
+          <div class="product-frame-image">
+            <img src="assets/surgicount/overview.jpeg"
+                 alt="Exterior product render of SurgiCount">
           </div>
-        </article>
+        </div>
 
-        <article>
-          <span>04</span>
-          <div>
-            <h3>Operating-Room Focused</h3>
-            <p>The platform is being shaped around mobility, workflow practicality, and surgical-team visibility.</p>
-          </div>
-        </article>
+        <div class="capability-list">
+
+          <article>
+            <span class="capability-number">01</span>
+            <div>
+              <h3>AI-assisted visibility</h3>
+              <p>
+                Computer vision supports visual identification and monitoring
+                within designated accountability zones.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span class="capability-number">02</span>
+            <div>
+              <h3>Intelligent sensing</h3>
+              <p>
+                Integrated sensing provides a physical confirmation layer
+                alongside the visual workflow.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span class="capability-number">03</span>
+            <div>
+              <h3>Real-time awareness</h3>
+              <p>
+                Item status and discrepancy awareness are brought into one
+                continuous operating-room view.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span class="capability-number">04</span>
+            <div>
+              <h3>Workflow-focused design</h3>
+              <p>
+                Mobility, visibility, and practical interaction are being shaped
+                around real surgical environments.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
       </div>
+
+      <div class="platform-statement">
+        <p>See more.</p>
+        <p>Verify more.</p>
+        <p class="accent">Miss less.</p>
+      </div>
+
     </div>
   </section>
 
 
-  <section class="principle-section">
-    <div class="principle-wrap">
-      <span class="section-kicker">The idea in one line</span>
-      <h2>See more. Verify more. Miss less.</h2>
-      <p>
-        SurgiCount is being developed to add a technology-supported layer of visibility
-        to existing surgical counting practices — without replacing clinical judgement
-        or established safety protocols.
-      </p>
-    </div>
-  </section>
-
-
+  <!-- ======================================================
+       PROGRESS
+       ====================================================== -->
   <section class="progress-section" id="progress">
-    <div class="section-heading">
-      <span class="section-kicker">Built, not just imagined</span>
-      <h2>From an idea to an engineered system.</h2>
-      <p>
-        SurgiCount has progressed through problem research, clinical workflow understanding,
-        engineering design, and CAD development into prototype build and integration.
-      </p>
-    </div>
+    <div class="content-width">
 
-    <div class="timeline">
-      <div class="timeline-item complete">
-        <span class="timeline-year">2024</span>
-        <strong>Idea &amp; Problem Discovery</strong>
-      </div>
-
-      <div class="timeline-item complete">
-        <span class="timeline-year">2025</span>
-        <strong>Research &amp; Validation</strong>
-      </div>
-
-      <div class="timeline-item complete">
-        <span class="timeline-year">2026</span>
-        <strong>Engineering &amp; CAD</strong>
-      </div>
-
-      <div class="timeline-item current">
-        <span class="timeline-year">Now</span>
-        <strong>Prototype Build &amp; Integration</strong>
-      </div>
-
-      <div class="timeline-item future">
-        <span class="timeline-year">Next</span>
-        <strong>Pilot Preparation &amp; Evaluation</strong>
-      </div>
-    </div>
-
-    <div class="progress-showcase">
-      <div class="progress-copy">
-        <span class="section-kicker">Current direction</span>
-        <h3>Engineering is moving into the physical build.</h3>
+      <div class="section-head">
+        <p class="overline">Built, not just imagined</p>
+        <h2>From problem discovery to physical build.</h2>
         <p>
-          The platform architecture has been translated into detailed mechanical design
-          and prototype preparation. As physical fabrication and integration progress,
-          this section can evolve from renders into real build photographs.
+          SurgiCount has moved through research, workflow understanding,
+          engineering design, and CAD development into prototype build and integration.
         </p>
       </div>
 
-      <img src="assets/surgicount/front.jpeg"
-           alt="Front exterior render of SurgiCount">
+      <div class="timeline">
+        <div class="timeline-item done">
+          <span class="dot"></span>
+          <p class="timeline-label">2024</p>
+          <h3>Problem Discovery</h3>
+        </div>
+
+        <div class="timeline-item done">
+          <span class="dot"></span>
+          <p class="timeline-label">2025</p>
+          <h3>Research &amp; Validation</h3>
+        </div>
+
+        <div class="timeline-item done">
+          <span class="dot"></span>
+          <p class="timeline-label">2026</p>
+          <h3>Engineering &amp; CAD</h3>
+        </div>
+
+        <div class="timeline-item active">
+          <span class="dot"></span>
+          <p class="timeline-label">Now</p>
+          <h3>Prototype Build &amp; Integration</h3>
+        </div>
+
+        <div class="timeline-item future">
+          <span class="dot"></span>
+          <p class="timeline-label">Next</p>
+          <h3>Pilot Preparation &amp; Evaluation</h3>
+        </div>
+      </div>
+
+      <div class="progress-feature">
+        <div class="progress-image-card">
+          <img src="assets/surgicount/front.jpeg"
+               alt="Front exterior view of SurgiCount">
+        </div>
+
+        <div class="progress-copy">
+          <p class="overline">Current stage</p>
+          <h3>Engineering is moving into the physical build.</h3>
+          <p>
+            The platform architecture has been translated into mechanical design
+            and prototype preparation. As fabrication and integration advance,
+            this space can evolve from concept renders into real build photographs.
+          </p>
+
+          <div class="progress-note">
+            <strong>Public-facing by design</strong>
+            <span>
+              The website presents the product externally while keeping unnecessary
+              internal engineering details private.
+            </span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
 
-  <section class="gallery-section">
-    <div class="section-heading centered">
-      <span class="section-kicker">Product views</span>
-      <h2>Show the product. Keep the internals private.</h2>
-      <p>
-        Public-facing exterior views communicate the physical progress of SurgiCount
-        without publishing unnecessary internal engineering detail.
-      </p>
-    </div>
+  <!-- ======================================================
+       PRODUCT DETAILS / EXTERIOR ONLY
+       ====================================================== -->
+  <section class="detail-section">
+    <div class="content-width">
 
-    <div class="gallery-grid">
-      <figure class="gallery-large">
-        <img src="assets/surgicount/overview.jpeg"
-             alt="SurgiCount overview">
-        <figcaption>
-          <span>Overview</span>
-          <strong>SurgiCount platform</strong>
-        </figcaption>
-      </figure>
+      <div class="section-head centered">
+        <p class="overline">Product presence</p>
+        <h2>Made to belong in the operating room.</h2>
+        <p>
+          The public-facing product story focuses on form, mobility, and workflow
+          presence — without exposing internal implementation details.
+        </p>
+      </div>
 
-      <figure>
-        <img src="assets/surgicount/front.jpeg"
-             alt="SurgiCount front view">
-        <figcaption>
-          <span>Front</span>
-          <strong>Mobile operating-room architecture</strong>
-        </figcaption>
-      </figure>
+      <div class="detail-grid">
 
-      <figure>
-        <img src="assets/surgicount/side.jpeg"
-             alt="SurgiCount side view">
-        <figcaption>
-          <span>Side</span>
-          <strong>Overhead vision positioning</strong>
-        </figcaption>
-      </figure>
+        <figure class="detail-card">
+          <div class="detail-image">
+            <img src="assets/surgicount/overview.jpeg"
+                 alt="SurgiCount overview render">
+          </div>
+          <figcaption>
+            <span>01</span>
+            <div>
+              <h3>Platform overview</h3>
+              <p>A compact mobile architecture designed around the surgical workspace.</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="detail-card">
+          <div class="detail-image">
+            <img src="assets/surgicount/front.jpeg"
+                 alt="SurgiCount front render">
+          </div>
+          <figcaption>
+            <span>02</span>
+            <div>
+              <h3>Front architecture</h3>
+              <p>A clear working surface with the vision system positioned above the field.</p>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="detail-card">
+          <div class="detail-image">
+            <img src="assets/surgicount/side.jpeg"
+                 alt="SurgiCount side render">
+          </div>
+          <figcaption>
+            <span>03</span>
+            <div>
+              <h3>Side profile</h3>
+              <p>Designed to maintain mobility while keeping the working area unobstructed.</p>
+            </div>
+          </figcaption>
+        </figure>
+
+      </div>
+
     </div>
   </section>
 
 
+  <!-- ======================================================
+       COMPANY
+       ====================================================== -->
   <section class="company-section" id="company">
-    <div class="company-story">
-      <span class="section-kicker">CountIQ Technologies</span>
-      <h2>Technology should support the people responsible for patient safety.</h2>
-      <p>
-        CountIQ Technologies LLP is building intelligent systems focused on surgical
-        accountability and safer operating-room workflows. SurgiCount is our first step
-        toward that vision.
-      </p>
-    </div>
+    <div class="content-width company-layout">
 
-    <div class="founder-panel">
-      <img src="founder.jpg"
-           alt="Bhuvan Prasad Konirika, Founder and CEO of CountIQ Technologies">
+      <div class="company-copy">
+        <p class="overline overline-light">CountIQ Technologies</p>
+        <h2>
+          Building technology around
+          <strong>accountability, not complexity.</strong>
+        </h2>
 
-      <div>
-        <span class="founder-role">Founder &amp; CEO</span>
-        <h3>Bhuvan Prasad Konirika</h3>
         <p>
-          Founder of CountIQ Technologies LLP and creator of SurgiCount. He leads the
-          product vision, research direction, and development effort while working with
-          healthcare professionals, engineers, and clinical advisors.
+          CountIQ Technologies LLP is focused on intelligent systems for safer
+          operating-room workflows. SurgiCount is our first platform built around
+          that mission.
         </p>
       </div>
+
+      <div class="founder-card">
+        <img src="founder.jpg"
+             alt="Bhuvan Prasad Konirika, Founder and CEO of CountIQ Technologies">
+
+        <div class="founder-copy">
+          <p class="founder-role">Founder &amp; CEO</p>
+          <h3>Bhuvan Prasad Konirika</h3>
+          <p>
+            Founder of CountIQ Technologies LLP and creator of SurgiCount.
+            He leads the product vision, research direction, and development effort
+            while working with healthcare professionals, engineers, and clinical advisors.
+          </p>
+        </div>
+      </div>
+
     </div>
   </section>
 
 
-  <section class="collaboration-section">
-    <span class="section-kicker">Open to collaboration</span>
+  <!-- ======================================================
+       FINAL CTA
+       ====================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
 
-    <h2>
-      Built for the operating room.<br>
-      <strong>Shaped with the people who work inside it.</strong>
-    </h2>
+      <div class="contact-copy">
+        <p class="overline overline-light">Open to collaboration</p>
 
-    <p>
-      CountIQ welcomes conversations with surgeons, scrub nurses, surgical technologists,
-      hospitals, researchers, engineers, clinical advisors, and healthcare innovators
-      as SurgiCount progresses toward pilot evaluation.
-    </p>
+        <h2>
+          The future of surgical counting
+          should be more accountable.
+        </h2>
 
-    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=founder@countiq.in&amp;su=SurgiCount%20Clinical%20or%20Technology%20Discussion"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="btn btn-primary">
-      Discuss SurgiCount
-    </a>
-  </section>
+        <p>
+          We welcome conversations with surgeons, surgical professionals,
+          hospitals, researchers, clinical advisors, engineers, and healthcare
+          innovators as SurgiCount progresses toward pilot evaluation.
+        </p>
 
+        <div class="contact-actions">
+          <a class="button button-white"
+             href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=founder@countiq.in&amp;su=SurgiCount%20Discussion"
+             target="_blank"
+             rel="noopener noreferrer">
+            Start a Conversation
+          </a>
 
-  <section class="final-cta" id="contact">
-    <div class="final-product">
-      <img src="assets/surgicount/overview.jpeg"
-           alt="SurgiCount platform">
-    </div>
+          <a class="email-link" href="mailto:founder@countiq.in">
+            founder@countiq.in
+          </a>
+        </div>
+      </div>
 
-    <div class="final-copy">
-      <span class="section-kicker light-kicker">CountIQ Technologies</span>
+      <div class="contact-visual">
+        <div class="contact-product-card">
+          <img src="assets/surgicount/overview.jpeg"
+               alt="SurgiCount platform">
+        </div>
+      </div>
 
-      <h2>
-        The future of surgical counting
-        should be more accountable.
-      </h2>
-
-      <h3>We're building toward it.</h3>
-
-      <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=founder@countiq.in&amp;su=SurgiCount%20Discussion"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="btn btn-white">
-        Start a Conversation
-      </a>
-
-      <a href="mailto:founder@countiq.in" class="email-link">
-        founder@countiq.in
-      </a>
     </div>
   </section>
 
@@ -363,53 +460,55 @@
 
 
 <footer class="footer">
-  <div class="footer-top">
-    <img src="logo.png" alt="CountIQ Technologies Logo" class="footer-logo">
+  <div class="footer-inner">
 
-    <div class="footer-links">
-      <a href="#system">SurgiCount</a>
+    <div class="footer-brand">
+      <img src="logo.png" alt="CountIQ Technologies">
+      <p>Intelligent systems for safer surgical workflows.</p>
+    </div>
+
+    <div class="footer-nav">
+      <a href="#platform">SurgiCount</a>
       <a href="#progress">Progress</a>
       <a href="#company">Company</a>
       <a href="mailto:careers@countiq.in">Careers</a>
     </div>
+
   </div>
 
-  <div class="footer-divider"></div>
+  <div class="footer-rule"></div>
 
-  <p class="footer-disclaimer">
-    <strong>Development Notice:</strong>
-    SurgiCount is currently under development and is not yet commercially available,
-    clinically certified, or approved as a medical device.
-  </p>
+  <div class="footer-meta">
+    <p>
+      <strong>Development Notice:</strong>
+      SurgiCount is currently under development and is not yet commercially available,
+      clinically certified, or approved as a medical device.
+    </p>
 
-  <div class="footer-bottom">
     <span>© 2026 CountIQ Technologies LLP. All Rights Reserved.</span>
-    <a href="https://countiq.in">countiq.in</a>
   </div>
 </footer>
 
 
 <script>
-  const menuBtn = document.getElementById('menuBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const navbar = document.getElementById('navbar');
+  const menuButton = document.getElementById('menuButton');
+  const mobileNav = document.getElementById('mobileNav');
+  const siteHeader = document.getElementById('siteHeader');
 
-  menuBtn.addEventListener('click', () => {
-    const open = mobileMenu.classList.toggle('show');
-    menuBtn.classList.toggle('open', open);
-    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  menuButton.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
 
-  mobileMenu.querySelectorAll('a').forEach(link => {
+  mobileNav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-      mobileMenu.classList.remove('show');
-      menuBtn.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded', 'false');
+      mobileNav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
     });
   });
 
   window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 20);
+    siteHeader.classList.toggle('scrolled', window.scrollY > 18);
   });
 </script>
 
