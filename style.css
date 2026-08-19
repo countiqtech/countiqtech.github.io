@@ -977,7 +977,6 @@ section{
 }
 
 .founder-card,
-.coo-card,
 .journey-card,
 .leadership-philosophy{
     background:#ffffff;
@@ -989,7 +988,7 @@ section{
 /* Founder card */
 .founder-card{
     display:grid;
-    grid-template-columns:220px 1fr;
+    grid-template-columns:240px 1fr;
     gap:34px;
     align-items:center;
     padding:32px;
@@ -1003,8 +1002,7 @@ section{
     border-radius:24px;
 }
 
-.founder-content span,
-.coo-content span{
+.founder-content span{
     display:inline-block;
     margin-bottom:10px;
     font-size:12px;
@@ -1029,38 +1027,6 @@ section{
     line-height:1.8;
 }
 
-/* COO card */
-.coo-card{
-    display:grid;
-    grid-template-columns:170px 1fr;
-    gap:28px;
-    align-items:center;
-    padding:28px 32px;
-}
-
-.coo-card img{
-    width:160px;
-    height:160px;
-    border:4px solid #dcfce7;
-    border-radius:50%;
-    object-fit:cover;
-    object-position:center top;
-}
-
-.coo-content span{
-    color:#059669;
-}
-
-.coo-content h3{
-    margin-bottom:12px;
-    color:#061b33;
-    font-size:2rem;
-}
-
-.coo-content p{
-    color:#475569;
-    line-height:1.8;
-}
 
 /* Journey card */
 .journey-card{
@@ -1531,14 +1497,12 @@ footer,
         font-size:32px;
     }
 
-    .founder-card,
-    .coo-card{
+    .founder-card{
         grid-template-columns:1fr;
         text-align:center;
     }
 
-    .founder-card img,
-    .coo-card img{
+    .founder-card img{
         margin:0 auto;
     }
 
@@ -1712,41 +1676,6 @@ footer,
    COUNTIQ NEW CREDIBILITY SECTIONS
    ========================================================= */
 
-.counting-numbers-section{
-    background:#ffffff;
-}
-
-.numbers-grid{
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:24px;
-    margin-top:45px;
-}
-
-.number-card{
-    padding:30px 26px;
-    border:1px solid #e2e8f0;
-    border-radius:20px;
-    background:#ffffff;
-    box-shadow:0 10px 28px rgba(15,23,42,0.05);
-    transition:0.3s ease;
-}
-
-.number-card:hover{
-    transform:translateY(-6px);
-    border-color:#bfdbfe;
-}
-
-.number-card h3{
-    margin-bottom:12px;
-    color:#1D4ED8;
-    font-size:1.2rem;
-}
-
-.number-card p{
-    color:#475569;
-    line-height:1.75;
-}
 
 /* Workflow Comparison */
 
@@ -1887,7 +1816,6 @@ footer,
 }
 
 @media(max-width:600px){
-    .numbers-grid,
     .status-timeline{
         grid-template-columns:1fr;
     }
@@ -1895,7 +1823,9 @@ footer,
     .comparison-card{
         padding:28px 24px;
     }
-   /* =========================================================
+}
+
+/* =========================================================
    FINAL CTA SECTION
    ========================================================= */
 
@@ -1907,15 +1837,25 @@ footer,
 }
 
 .cta-section h2{
-    font-size:2.8rem;
     margin-bottom:20px;
+    color:#ffffff;
+    font-size:2.8rem;
+    line-height:1.2;
 }
 
 .cta-section p{
     max-width:800px;
     margin:0 auto 35px;
-    line-height:1.9;
     color:#dbeafe;
+    line-height:1.9;
+}
+
+.cta-section .primary-btn{
+    background:#2563eb;
+}
+
+.cta-section .primary-btn:hover{
+    background:#1d4ed8;
 }
 
 .footer-disclaimer{
@@ -1925,6 +1865,15 @@ footer,
     font-size:0.9rem;
     line-height:1.7;
 }
+
+@media(max-width:600px){
+    .cta-section{
+        padding:70px 20px;
+    }
+
+    .cta-section h2{
+        font-size:2rem;
+    }
 }
 
 /* =========================================================
