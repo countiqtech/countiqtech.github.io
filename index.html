@@ -1,851 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SurgiCount | AI-Assisted Surgical Item Accountability</title>
+  <title>SurgiCount | Intelligent Surgical Item Accountability</title>
 
-    <meta name="description" content="SurgiCount by CountIQ Technologies LLP is an AI-assisted surgical item accountability system being developed to support instruments, needles, and soft-item tracking through vision, sensing, and real-time operating room monitoring.">
+  <meta name="description"
+        content="SurgiCount by CountIQ Technologies LLP is an AI-assisted surgical item accountability system being developed to support surgical item visibility through vision, sensing, and real-time operating-room monitoring.">
 
-    <!-- Browser tab icon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preload" as="image" href="assets/surgicount/overview.jpeg">
+  <link rel="stylesheet" href="style.css">
 
-    <!-- Preload hero image for faster landing-page loading -->
-    <link rel="preload" as="image" href="hero.jpg">
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-<header class="navbar">
+<header class="navbar" id="navbar">
+  <a class="brand" href="#home" aria-label="CountIQ home">
+    <img src="logo.png" alt="CountIQ Technologies Logo" class="logo">
+  </a>
 
-    <div class="logo-section">
-        <img src="logo.png" alt="CountIQ Technologies Logo" class="logo">
-    </div>
+  <nav class="desktop-nav" aria-label="Primary navigation">
+    <a href="#home">Home</a>
+    <a href="#system">SurgiCount</a>
+    <a href="#progress">Progress</a>
+    <a href="#company">CountIQ</a>
+  </nav>
 
-    <div class="nav-group">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#importance">Why This Matters</a></li>
-	            <li><a href="#rsi-awareness">RSI Awareness</a></li>
-                <li><a href="#solution">SurgiCount</a></li>
-                <li><a href="#team-new">Team</a></li>
-            </ul>
-        </nav>
+  <a class="nav-cta"
+     href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=founder@countiq.in&amp;su=SurgiCount%20Discussion"
+     target="_blank"
+     rel="noopener noreferrer">
+    Start a Conversation
+  </a>
 
-        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 
-    <div class="side-menu" id="sideMenu">
-        <a href="#problem-solution-impact">Problem → Impact</a>
-        <a href="#workflow">How It Works</a>
-        <a href="#architecture">Architecture</a>
-        <a href="#contact-countiq">Contact</a>
-	<a href="#clinical">Clinical Guidance</a>
-        <a href="#development-status">Development Status</a>
-    </div>
-
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#system">SurgiCount</a>
+    <a href="#progress">Progress</a>
+    <a href="#company">CountIQ</a>
+    <a href="#contact">Contact</a>
+  </div>
 </header>
 
-<section id="home" class="hero">
+<main>
 
-    <div class="hero-content">
+  <section class="hero" id="home">
+    <div class="hero-copy">
+      <span class="eyebrow">CountIQ Technologies presents</span>
 
-        <span class="company-tag">Introducing SurgiCount™</span>
+      <h1>SurgiCount<span>™</span></h1>
 
-        <h1>SURGICAL COUNTING ERRORS STILL HAPPEN.</h1>
-
-        <h2>
-            Intelligent Surgical Item Accountability<br>
-            for Safer Operating Rooms
-        </h2>
-
-        <p class="hero-stat">
-            Every instrument, needle, sponge, and gauze used in surgery must be accounted for before closure.
-        </p>
-
-        <p>
-            SurgiCount is being developed to support surgical teams with AI vision,
-            intelligent sensing, and real-time item accountability during operating room procedures.
-        </p>
-
-        <div class="hero-actions">
-            <a href="#importance" class="primary-btn">Why Counting Matters</a>
-            <a href="#solution" class="secondary-btn">Explore SurgiCount</a>
-        </div>
-
-    </div>
-
-    <div class="hero-message">
-        <span>Patient Safety</span>
-        <span>Starts With</span>
-        <span>Accountability</span>
-    </div>
-
-	</section>
-	
-
-
-
-
-<section id="problem-solution-impact" class="section psi-section">
-
-    <div class="container">
-
-        <span class="section-tag">Problem → Solution → Impact</span>
-
-        <h2>From Counting Complexity to Surgical Accountability</h2>
-
-        <div class="psi-flow">
-
-            <div class="psi-card">
-                <span>01</span>
-                <h3>Problem</h3>
-                <p>
-                    Surgical counting depends on accurate tracking of instruments,
-                    needles, sponges, gauze, and other items during every procedure.
-                </p>
-            </div>
-
-            <div class="psi-card">
-                <span>02</span>
-                <h3>Challenge</h3>
-                <p>
-                    Operating rooms involve time pressure, workflow interruptions,
-                    staff coordination, fatigue, and unexpected clinical changes.
-                </p>
-            </div>
-
-            <div class="psi-card highlighted">
-                <span>03</span>
-                <h3>SurgiCount</h3>
-                <p>
-                    SurgiCount is being developed to combine AI vision, intelligent
-                    sensing, and real-time monitoring into one accountability system.
-                </p>
-            </div>
-
-            <div class="psi-card">
-                <span>04</span>
-                <h3>Impact</h3>
-                <p>
-                    Greater visibility, stronger documentation support, faster
-                    discrepancy awareness, and improved surgical accountability.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="workflow-comparison" class="section workflow-comparison-section">
-    <div class="container">
-        <span class="section-tag">Workflow Visibility</span>
-
-        <h2>Traditional Counting vs SurgiCount Support</h2>
-
-        <div class="comparison-grid">
-            <div class="comparison-card traditional">
-                <h3>Traditional Workflow</h3>
-                <ul>
-                    <li>Manual counting and repeated verification</li>
-                    <li>Paper, verbal, or checklist-based documentation</li>
-                    <li>Discrepancies often discovered during final count</li>
-                    <li>Recounts, field checks, and additional verification when mismatch occurs</li>
-                </ul>
-            </div>
-
-            <div class="comparison-card assisted">
-                <h3>SurgiCount Assisted Workflow</h3>
-                <ul>
-                    <li>AI-assisted item visibility</li>
-                    <li>Sensor-supported presence verification</li>
-                    <li>Real-time monitoring during the procedure</li>
-                    <li>Mismatch awareness before final closure</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="importance" class="section">
-
-    <div class="container">
-
-        <div class="why-matters-layout">
-
-            <div class="why-left">
-                <span class="section-tag">Patient Safety</span>
-
-                <h2>Why This Matters</h2>
-
-                <p class="section-intro">
-                    Retained Surgical Items (RSIs) remain among the most serious preventable
-                    surgical safety events. Operating rooms depend on accurate counting,
-                    communication, and coordination between healthcare professionals.
-                    Even under established protocols, counting discrepancies can occur in complex
-                    and high-pressure clinical environments.
-                </p>
-            </div>
-
-            <div class="stats-grid">
-
-                <div class="stat-card">
-                    <h3>Patient Safety</h3>
-                    <p>Surgical accountability directly impacts patient safety and quality of care.</p>
-                </div>
-
-                <div class="stat-card">
-                    <h3>High-Risk Environment</h3>
-                    <p>Operating rooms involve rapid decisions, multiple teams, and continuous workflow changes.</p>
-                </div>
-
-                <div class="stat-card">
-                    <h3>Manual Verification</h3>
-                    <p>Surgical teams still rely heavily on manual counting and repeated verification processes.</p>
-                </div>
-
-                <div class="stat-card">
-                    <h3>Clinical Accountability</h3>
-                    <p>Every instrument, sponge, and needle must be accounted for before surgical closure.</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-	<section id="surgical-counts" class="section count-importance-section">
-
-    <div class="container">
-
-        <span class="section-tag">Surgical Counting</span>
-
-        <h2>Surgical Counts Are a Standard Safety Procedure</h2>
-
-        <p class="section-intro">
-            In every surgical procedure, items introduced into the operating field must be accounted for.
-            Instruments, needles, sponges, gauze, and other surgical materials are counted before, during,
-            and before closure to help protect patient safety.
-        </p>
-
-        <div class="count-highlight">
-            <h3>One missing item can change everything.</h3>
-            <p>
-                A single counting discrepancy can delay closure, trigger repeated checks, require imaging,
-                create stress for the surgical team, and in rare cases lead to serious patient harm.
-            </p>
-        </div>
-
-        <div class="count-grid">
-
-            <div class="count-card">
-                <h3>Why Counts Matter</h3>
-                <p>
-                    Surgical counts help ensure that every item entering the sterile field is accounted for
-                    before the procedure is completed.
-                </p>
-            </div>
-
-            <div class="count-card">
-                <h3>Why It Gets Difficult</h3>
-                <p>
-                    Operating rooms involve fast decisions, instrument exchanges, multiple staff members,
-                    emergency changes, fatigue, and high-pressure workflow.
-                </p>
-            </div>
-
-            <div class="count-card">
-                <h3>When Counts Do Not Match</h3>
-                <p>
-                    Teams may need to recount, inspect the surgical field, check waste areas, review records,
-                    and perform additional verification before closure.
-                </p>
-            </div>
-
-            <div class="count-card">
-                <h3>Why Technology Helps</h3>
-                <p>
-                    SurgiCount is being developed to add an extra layer of visibility, accountability,
-                    and real-time support to existing surgical counting practices.
-                </p>
-            </div>
-
-        </div>
-
-        <div class="impact-box">
-            <h3>Global Patient Safety Concern</h3>
-
-            <p>
-                Retained Surgical Items are considered rare, but they continue to be reported worldwide.
-                AHRQ PSNet cites an estimated RSI incidence of about 1.3 per 10,000 surgical procedures.
-                The Joint Commission reported 119 unintended retention events in 2024 among submitted
-                sentinel event reports.
-            </p>
-
-            <p class="small-note">
-                These figures are used for awareness only. Actual rates can vary by reporting system,
-                hospital setting, surgical type, and whether events are internally or externally reported.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="rsi-awareness" class="section rsi-section rsi-bg">
-
-    <div class="container">
-
-        <span class="section-tag">RSI Awareness</span>
-
-        <h2>Understanding Retained Surgical Items</h2>
-
-        <p class="section-intro">
-            Retained Surgical Items are not just a surgical counting issue. They are a patient
-            safety, workflow, documentation, and accountability challenge inside the operating room.
-        </p>
-
-        <div class="rsi-grid">
-
-            <div class="rsi-card">
-                <h3>What Are RSIs?</h3>
-                <p>
-                    Retained Surgical Items are surgical sponges, needles, instruments, or other
-                    procedural materials unintentionally left inside a patient after surgery.
-                </p>
-            </div>
-
-            <div class="rsi-card">
-                <h3>Why Do They Happen?</h3>
-                <p>
-                    Operating rooms are high-pressure environments involving multiple teams, rapid
-                    decisions, instrument exchanges, consumables, and repeated verification steps.
-                </p>
-            </div>
-
-            <div class="rsi-card">
-                <h3>Current Prevention Methods</h3>
-                <p>
-                    Hospitals rely on manual counts, surgical safety checklists, team verification,
-                    documentation, staff training, and imaging when clinically required.
-                </p>
-            </div>
-
-            <div class="rsi-card">
-                <h3>When Counts Do Not Match</h3>
-                <p>
-                    Teams may need to recount, inspect the surgical field, check drapes and waste areas,
-                    review documentation, and perform additional verification before closure.
-                </p>
-            </div>
-
-            <div class="rsi-card">
-                <h3>Why Accountability Matters</h3>
-                <p>
-                    Surgical item accountability supports patient safety, operating room efficiency,
-                    quality assurance, documentation, and institutional safety standards.
-                </p>
-            </div>
-
-            <div class="rsi-card">
-                <h3>The Future</h3>
-                <p>
-                    Future operating rooms may use computer vision, intelligent sensing, real-time
-                    monitoring, and workflow automation to support safer surgical accountability.
-                </p>
-            </div>
-
-        </div>
-
-        <div class="source-box">
-
-            <h3>Learn More From Trusted Sources</h3>
-
-            <p>
-                Surgical safety and retained surgical item prevention are discussed in global and
-                clinical safety resources. These links open external references for further reading.
-            </p>
-
-            <div class="source-links">
-
-                <a href="https://www.who.int/teams/integrated-health-services/patient-safety/research/safe-surgery"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="resource-card">
-                    <h4>WHO Safe Surgery</h4>
-                    <p>Learn about global surgical safety initiatives and WHO recommendations.</p>
-                    <span>Read Article →</span>
-                </a>
-
-                <a href="https://psnet.ahrq.gov/primer/retained-surgical-items-definition-and-epidemiology"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="resource-card">
-                    <h4>AHRQ PSNet: RSI Overview</h4>
-                    <p>Understand retained surgical items, causes, risks, and prevention approaches.</p>
-                    <span>Read Article →</span>
-                </a>
-
-                <a href="https://www.facs.org/about-acs/statements/prevention-of-unintentionally-retained-surgical-items-after-surgery/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="resource-card">
-                    <h4>American College of Surgeons</h4>
-                    <p>Professional guidance and recommendations for preventing retained surgical items.</p>
-                    <span>Read Article →</span>
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="solution" class="section light">
-
-    <div class="container">
-
-        <span class="section-tag">Introducing SurgiCount</span>
-
-        <h2>Intelligent Surgical Item Accountability</h2>
-
-        <p class="section-intro">
-            SurgiCount is being developed around three dedicated accountability zones:
-            a main instrument tray, a needle pad, and a smart bin ring. AI vision and
-            intelligent sensing work together to support real-time visibility of instruments,
-            needles, and soft surgical items throughout the procedure.
-        </p>
-
-        <div class="feature-grid">
-
-            <div class="feature-card">
-                <h3>AI Vision</h3>
-                <p>Supports visual identification and verification of instruments and needles within designated monitoring zones.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Intelligent Sensors</h3>
-                <p>Supports instrument presence changes and soft-item disposal events through integrated sensing.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Real-Time Monitoring</h3>
-                <p>Maintains live visibility of item counts and accountability status during the surgical workflow.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Wireless Dashboard</h3>
-                <p>Displays item counts, status, alerts, and workflow information for the surgical team.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Mismatch Alerts</h3>
-                <p>Supports final verification before surgical closure.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Workflow Visibility</h3>
-                <p>
-                    Provides continuous awareness of surgical items, counts, and verification
-                    status throughout the operating room workflow.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="workflow" class="section">
-
-    <div class="container">
-
-        <span class="section-tag">Workflow Overview</span>
-
-        <h2>How SurgiCount Works</h2>
-
-        <p class="section-intro">
-            SurgiCount supports surgical teams through a structured workflow that combines
-            AI vision, intelligent sensing, and real-time monitoring to improve visibility
-            and accountability throughout the counting process.
-        </p>
-
-        <div class="workflow">
-
-            <div class="step">
-                <span>1</span>
-                <h3>Item Placement</h3>
-                <p>
-                    Instruments, needles, and soft surgical items are handled through their designated accountability zones.
-                </p>
-            </div>
-
-            <div class="step">
-                <span>2</span>
-                <h3>AI Identification</h3>
-                <p>
-                    Computer vision supports identification and verification of visible instruments and needles.
-                </p>
-            </div>
-
-            <div class="step">
-                <span>3</span>
-                <h3>Sensor Verification</h3>
-                <p>
-                    Integrated sensing supports instrument presence changes and soft-item disposal events.
-                </p>
-            </div>
-
-            <div class="step">
-                <span>4</span>
-                <h3>Real-Time Tracking</h3>
-                <p>
-                    Item counts and accountability status are continuously updated throughout the procedure.
-                </p>
-            </div>
-
-            <div class="step">
-                <span>5</span>
-                <h3>Mismatch Alert</h3>
-                <p>
-                    Visual and workflow alerts assist teams when discrepancies require attention.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="architecture" class="section light architecture-section">
-
-    <div class="container">
-
-        <span class="section-tag">PLATFORM OVERVIEW</span>
-
-        <h2>SurgiCount System Architecture</h2>
-
-        <p class="section-intro">
-            SurgiCount is being designed as an integrated operating room accountability system
-            combining a main instrument tray, dedicated needle pad, smart bin ring, AI vision,
-            intelligent sensing, and wireless dashboard visibility.
-        </p>
-
-        <div class="architecture-grid">
-
-            <div class="arch-card">
-                <span class="arch-number">01</span>
-                <h3>Main Instrument Tray</h3>
-                <p>Dedicated instrument accountability zone supported by AI vision and sensor-based presence monitoring.</p>
-            </div>
-
-            <div class="arch-card">
-                <span class="arch-number">02</span>
-                <h3>Needle Pad</h3>
-                <p>Dedicated needle placement zone designed to support visual identification and count verification.</p>
-            </div>
-
-            <div class="arch-card">
-                <span class="arch-number">03</span>
-                <h3>Smart Bin Ring</h3>
-                <p>Sensor-supported disposal monitoring for sponges, gauze, mops, and other soft surgical items.</p>
-            </div>
-
-            <div class="arch-card">
-                <span class="arch-number">04</span>
-                <h3>AI Vision & Sensing</h3>
-                <p>Combines computer vision and intelligent sensing to strengthen real-time item accountability.</p>
-            </div>
-
-            <div class="arch-card">
-                <span class="arch-number">05</span>
-                <h3>Wireless Dashboard</h3>
-                <p>Provides real-time count visibility, item status, alerts, and workflow information to the surgical team.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="trust-clinical-section" id="clinical">
-  <div class="trust-clinical-container">
-
-    <div class="trust-content">
-      <span class="section-label">Our Mission</span>
-
-      <h2>Protecting Trust in Every Procedure</h2>
-
-      <p class="lead-text">
-        Every surgical procedure relies on precision, teamwork, and trust.
-      </p>
+      <h2>Every Item. Accounted For.</h2>
 
       <p>
-        At CountIQ Technologies, our mission is to help hospitals and surgical
-        professionals reduce preventable risks, strengthen surgical accountability,
-        and support safer patient outcomes through intelligent operating room systems.
+        An AI-assisted surgical item accountability system being developed to bring
+        greater visibility and real-time support to surgical counting workflows.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#system" class="btn btn-primary">Explore SurgiCount</a>
+
+        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=founder@countiq.in&amp;su=SurgiCount%20Discussion"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-secondary">
+          Start a Conversation
+        </a>
+      </div>
+
+      <span class="development-note">
+        Prototype build &amp; pilot preparation
+      </span>
+    </div>
+
+    <div class="hero-product">
+      <div class="product-glow"></div>
+      <img src="assets/surgicount/overview.jpeg"
+           alt="SurgiCount surgical accountability platform render"
+           class="hero-device">
+    </div>
+  </section>
+
+
+  <section class="statement-section" id="problem">
+    <div class="statement-wrap">
+      <span class="section-kicker light-kicker">Why we started</span>
+
+      <h2>
+        Surgical counting hasn't changed enough.
+        <strong>We're working to change that.</strong>
+      </h2>
+
+      <p>
+        Surgical teams must account for instruments, needles, sponges, gauze, and other
+        materials introduced during a procedure. In complex operating rooms, accurate
+        counting still depends heavily on repeated manual verification and team coordination.
+      </p>
+
+      <div class="statement-links">
+        <a href="https://psnet.ahrq.gov/primer/retained-surgical-items-definition-and-epidemiology"
+           target="_blank" rel="noopener noreferrer">AHRQ PSNet ↗</a>
+        <a href="https://www.facs.org/about-acs/statements/prevention-of-unintentionally-retained-surgical-items-after-surgery/"
+           target="_blank" rel="noopener noreferrer">American College of Surgeons ↗</a>
+        <a href="https://www.who.int/teams/integrated-health-services/patient-safety/research/safe-surgery"
+           target="_blank" rel="noopener noreferrer">WHO Safe Surgery ↗</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="system-section" id="system">
+    <div class="section-heading centered">
+      <span class="section-kicker">Meet SurgiCount</span>
+      <h2>A physical platform built around surgical accountability.</h2>
+      <p>
+        SurgiCount is being designed as a mobile operating-room platform that combines
+        computer vision, intelligent sensing, and real-time workflow visibility.
       </p>
     </div>
 
-    <div class="clinical-content">
-      <span class="section-label">Clinical Guidance</span>
+    <div class="system-showcase">
+      <div class="system-image">
+        <img src="assets/surgicount/overview.jpeg"
+             alt="SurgiCount exterior product render">
+      </div>
 
-      <h2>Built with Clinical Guidance</h2>
+      <div class="system-points">
+        <article>
+          <span>01</span>
+          <div>
+            <h3>AI-Assisted Visibility</h3>
+            <p>Computer vision supports identification and monitoring within designated accountability zones.</p>
+          </div>
+        </article>
 
+        <article>
+          <span>02</span>
+          <div>
+            <h3>Intelligent Sensing</h3>
+            <p>Integrated sensing provides an additional layer of physical item-awareness during the workflow.</p>
+          </div>
+        </article>
+
+        <article>
+          <span>03</span>
+          <div>
+            <h3>Real-Time Accountability</h3>
+            <p>Counts, item status, and discrepancy awareness are brought into one continuous view.</p>
+          </div>
+        </article>
+
+        <article>
+          <span>04</span>
+          <div>
+            <h3>Operating-Room Focused</h3>
+            <p>The platform is being shaped around mobility, workflow practicality, and surgical-team visibility.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="principle-section">
+    <div class="principle-wrap">
+      <span class="section-kicker">The idea in one line</span>
+      <h2>See more. Verify more. Miss less.</h2>
       <p>
-        SurgiCount is being developed with continuous input from experienced surgeons,
-        operating room professionals, and clinical advisors. Their insights help ensure
-        the system is shaped around real surgical workflows, safety expectations, and
-        practical hospital environments.
+        SurgiCount is being developed to add a technology-supported layer of visibility
+        to existing surgical counting practices — without replacing clinical judgement
+        or established safety protocols.
       </p>
+    </div>
+  </section>
 
-      <div class="clinical-list">
-        <div>
-          <strong>Clinical Insights</strong>
-          <span>Guided by operating room experience and surgical workflow realities.</span>
-        </div>
 
-        <div>
-          <strong>Hospital Perspective</strong>
-          <span>Designed with consideration for practical clinical environments.</span>
-        </div>
+  <section class="progress-section" id="progress">
+    <div class="section-heading">
+      <span class="section-kicker">Built, not just imagined</span>
+      <h2>From an idea to an engineered system.</h2>
+      <p>
+        SurgiCount has progressed through problem research, clinical workflow understanding,
+        engineering design, and CAD development into prototype build and integration.
+      </p>
+    </div>
 
-        <div>
-          <strong>Continuous Validation</strong>
-          <span>Refined through ongoing professional feedback and domain expertise.</span>
-        </div>
+    <div class="timeline">
+      <div class="timeline-item complete">
+        <span class="timeline-year">2024</span>
+        <strong>Idea &amp; Problem Discovery</strong>
+      </div>
+
+      <div class="timeline-item complete">
+        <span class="timeline-year">2025</span>
+        <strong>Research &amp; Validation</strong>
+      </div>
+
+      <div class="timeline-item complete">
+        <span class="timeline-year">2026</span>
+        <strong>Engineering &amp; CAD</strong>
+      </div>
+
+      <div class="timeline-item current">
+        <span class="timeline-year">Now</span>
+        <strong>Prototype Build &amp; Integration</strong>
+      </div>
+
+      <div class="timeline-item future">
+        <span class="timeline-year">Next</span>
+        <strong>Pilot Preparation &amp; Evaluation</strong>
       </div>
     </div>
 
-  </div>
-</section>
-
-
-
-
-<section id="development-status" class="section development-status-section">
-    <div class="container">
-        <span class="section-tag">Current Stage</span>
-
-        <h2>Development Status</h2>
-
-        <p class="section-intro">
-            SurgiCount is currently in prototype build and pilot preparation.
-            Core system architecture and engineering design have been completed,
-            with fabrication, component integration, testing, and pilot readiness activities underway.
-        </p>
-
-        <div class="status-timeline">
-            <div class="status-item done">
-                <span>✓</span>
-                <p>Problem Research</p>
-            </div>
-
-            <div class="status-item done">
-                <span>✓</span>
-                <p>Clinical Workflow Study</p>
-            </div>
-
-            <div class="status-item done">
-                <span>✓</span>
-                <p>System Architecture</p>
-            </div>
-
-            <div class="status-item done">
-                <span>✓</span>
-                <p>CAD & Engineering Development</p>
-            </div>
-
-            <div class="status-item active">
-                <span>•</span>
-                <p>Prototype Build & Integration</p>
-            </div>
-
-            <div class="status-item upcoming">
-                <span>→</span>
-                <p>Pilot Evaluation</p>
-            </div>
-        </div>
-
-        <div class="medical-disclaimer">
-            <strong>Development Notice:</strong>
-            SurgiCount is currently under development and is not yet commercially available,
-            clinically certified, or approved as a medical device.
-        </div>
-    </div>
-</section>
-
-<section id="team-new">
-
-    <div class="team-wrap">
-
-        <h2 class="team-title">Meet the Founder</h2>
-
-        <div class="team-grid">
-
-            <div class="team-left">
-
-                <div class="founder-card">
-
-                    <img src="founder.jpg" alt="Bhuvan Prasad Konirika">
-
-                    <div class="founder-content">
-
-                        <span>Founder & CEO</span>
-
-                        <h3>Bhuvan Prasad Konirika</h3>
-
-                        <p>
-                            Founder & CEO of CountIQ Technologies LLP and creator of SurgiCount,
-                            an intelligent surgical safety system focused on improving operating
-                            room accountability and reducing preventable risks.
-                        </p>
-
-                        <p>
-                            He leads the company’s product vision, research direction, and
-                            development efforts while working closely with healthcare professionals,
-                            engineers, and clinical advisors.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="journey-card">
-                <span class="journey-title">Our Journey</span>
-
-                <div class="journey-progress">
-                    <div class="progress-item done">
-                        <span class="progress-year">2024</span>
-                        <p>Idea Conceived</p>
-                    </div>
-
-                    <div class="progress-item done">
-                        <span class="progress-year">2025</span>
-                        <p>Research & Validation</p>
-                    </div>
-
-                    <div class="progress-item done">
-                        <span class="progress-year">2026</span>
-                        <p>CountIQ Founded</p>
-                    </div>
-
-                    <div class="progress-item done">
-                        <span class="progress-year">2026</span>
-                        <p>SurgiCount Development</p>
-                    </div>
-
-                    <div class="progress-item next">
-                        <span class="progress-year">Current Stage</span>
-                        <p>Pilot Preparation</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="leadership-philosophy">
-            <h3>Why We Started</h3>
-
-            <p>
-                Every year, preventable surgical counting errors continue to place
-                patients and healthcare teams at unnecessary risk. CountIQ was founded
-                to address this challenge through practical, technology-driven solutions.
-                SurgiCount represents our commitment to improving surgical accountability
-                while respecting the realities of modern operating room workflows.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="contact-countiq" class="cta-section">
-
-    <div class="container">
-
-        <h2>Let's Build Safer Operating Rooms Together</h2>
-
+    <div class="progress-showcase">
+      <div class="progress-copy">
+        <span class="section-kicker">Current direction</span>
+        <h3>Engineering is moving into the physical build.</h3>
         <p>
-            We welcome conversations with surgeons, hospitals, operating room professionals,
-            clinical advisors, research partners, and healthcare innovators who share our
-            commitment to improving surgical accountability and patient safety.
+          The platform architecture has been translated into detailed mechanical design
+          and prototype preparation. As physical fabrication and integration progress,
+          this section can evolve from renders into real build photographs.
         </p>
+      </div>
 
-        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=founder@countiq.in"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="primary-btn">
-            Contact CountIQ
-        </a>
+      <img src="assets/surgicount/front.jpeg"
+           alt="Front exterior render of SurgiCount">
+    </div>
+  </section>
 
+
+  <section class="gallery-section">
+    <div class="section-heading centered">
+      <span class="section-kicker">Product views</span>
+      <h2>Show the product. Keep the internals private.</h2>
+      <p>
+        Public-facing exterior views communicate the physical progress of SurgiCount
+        without publishing unnecessary internal engineering detail.
+      </p>
     </div>
 
-</section>
+    <div class="gallery-grid">
+      <figure class="gallery-large">
+        <img src="assets/surgicount/overview.jpeg"
+             alt="SurgiCount overview">
+        <figcaption>
+          <span>Overview</span>
+          <strong>SurgiCount platform</strong>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/surgicount/front.jpeg"
+             alt="SurgiCount front view">
+        <figcaption>
+          <span>Front</span>
+          <strong>Mobile operating-room architecture</strong>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/surgicount/side.jpeg"
+             alt="SurgiCount side view">
+        <figcaption>
+          <span>Side</span>
+          <strong>Overhead vision positioning</strong>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+
+  <section class="company-section" id="company">
+    <div class="company-story">
+      <span class="section-kicker">CountIQ Technologies</span>
+      <h2>Technology should support the people responsible for patient safety.</h2>
+      <p>
+        CountIQ Technologies LLP is building intelligent systems focused on surgical
+        accountability and safer operating-room workflows. SurgiCount is our first step
+        toward that vision.
+      </p>
+    </div>
+
+    <div class="founder-panel">
+      <img src="founder.jpg"
+           alt="Bhuvan Prasad Konirika, Founder and CEO of CountIQ Technologies">
+
+      <div>
+        <span class="founder-role">Founder &amp; CEO</span>
+        <h3>Bhuvan Prasad Konirika</h3>
+        <p>
+          Founder of CountIQ Technologies LLP and creator of SurgiCount. He leads the
+          product vision, research direction, and development effort while working with
+          healthcare professionals, engineers, and clinical advisors.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="collaboration-section">
+    <span class="section-kicker">Open to collaboration</span>
+
+    <h2>
+      Built for the operating room.<br>
+      <strong>Shaped with the people who work inside it.</strong>
+    </h2>
+
+    <p>
+      CountIQ welcomes conversations with surgeons, scrub nurses, surgical technologists,
+      hospitals, researchers, engineers, clinical advisors, and healthcare innovators
+      as SurgiCount progresses toward pilot evaluation.
+    </p>
+
+    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=founder@countiq.in&amp;su=SurgiCount%20Clinical%20or%20Technology%20Discussion"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn btn-primary">
+      Discuss SurgiCount
+    </a>
+  </section>
+
+
+  <section class="final-cta" id="contact">
+    <div class="final-product">
+      <img src="assets/surgicount/overview.jpeg"
+           alt="SurgiCount platform">
+    </div>
+
+    <div class="final-copy">
+      <span class="section-kicker light-kicker">CountIQ Technologies</span>
+
+      <h2>
+        The future of surgical counting
+        should be more accountable.
+      </h2>
+
+      <h3>We're building toward it.</h3>
+
+      <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=founder@countiq.in&amp;su=SurgiCount%20Discussion"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn btn-white">
+        Start a Conversation
+      </a>
+
+      <a href="mailto:founder@countiq.in" class="email-link">
+        founder@countiq.in
+      </a>
+    </div>
+  </section>
+
+</main>
+
 
 <footer class="footer">
+  <div class="footer-top">
+    <img src="logo.png" alt="CountIQ Technologies Logo" class="footer-logo">
 
-    <div class="footer-content">
-
-        <img src="logo.png" alt="CountIQ Logo" class="footer-logo">
-
-        <h3>CountIQ Technologies LLP</h3>
-
-        <p>
-            Building intelligent technologies that support safer surgical workflows
-            and strengthen operating room accountability.
-        </p>
-
-        <div class="footer-links">
-            <a href="mailto:careers@countiq.in">careers@countiq.in</a>
-            <a href="mailto:founder@countiq.in">founder@countiq.in</a>
-            <a href="https://countiq.in">www.countiq.in</a>
-        </div>
-
-        <div class="footer-divider"></div>
-
-        <p class="footer-disclaimer">
-            SurgiCount is currently under development and is not yet commercially available,
-            clinically certified, or approved as a medical device.
-        </p>
-
-        <span class="copyright">
-            © 2026 CountIQ Technologies LLP. All Rights Reserved.
-        </span>
-
+    <div class="footer-links">
+      <a href="#system">SurgiCount</a>
+      <a href="#progress">Progress</a>
+      <a href="#company">Company</a>
+      <a href="mailto:careers@countiq.in">Careers</a>
     </div>
+  </div>
 
+  <div class="footer-divider"></div>
+
+  <p class="footer-disclaimer">
+    <strong>Development Notice:</strong>
+    SurgiCount is currently under development and is not yet commercially available,
+    clinically certified, or approved as a medical device.
+  </p>
+
+  <div class="footer-bottom">
+    <span>© 2026 CountIQ Technologies LLP. All Rights Reserved.</span>
+    <a href="https://countiq.in">countiq.in</a>
+  </div>
 </footer>
 
-<script src="script.js"></script>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const navbar = document.getElementById('navbar');
+
+  menuBtn.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('show');
+    menuBtn.classList.toggle('open', open);
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('show');
+      menuBtn.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  });
+</script>
 
 </body>
-
 </html>
