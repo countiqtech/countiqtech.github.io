@@ -343,17 +343,17 @@ a{
   inset:0;
   z-index:-3;
   background:
-    radial-gradient(circle at 55% 43%,rgba(54,199,220,.13),transparent 30%),
-    radial-gradient(circle at 44% 48%,rgba(46,91,234,.07),transparent 48%),
-    linear-gradient(145deg,#fbfcfd 0%,#f1f5f8 100%);
+    radial-gradient(circle at 56% 46%,rgba(54,199,220,.14),transparent 28%),
+    radial-gradient(circle at 46% 48%,rgba(46,91,234,.08),transparent 46%),
+    linear-gradient(145deg,#ffffff 0%,#f7fbff 100%);
 }
 
 .hero-launch-product::after{
   content:"";
   position:absolute;
-  left:9%;
-  right:9%;
-  bottom:12%;
+  left:12%;
+  right:12%;
+  bottom:10%;
   height:1px;
   z-index:-1;
   background:linear-gradient(90deg,transparent,#cfd8e2 20%,#cfd8e2 80%,transparent);
@@ -375,14 +375,11 @@ a{
 .launch-product-image{
   position:relative;
   z-index:2;
-  width:min(91%,850px);
-  max-height:76vh;
+  width:min(96%,900px);
+  max-height:79vh;
   object-fit:contain;
-  /* The source render is a JPEG with its own white background.
-     Screen blending integrates that white into the intentionally pale product stage. */
-  mix-blend-mode:multiply;
-  filter:drop-shadow(0 30px 30px rgba(7,24,45,.13));
-  transform:translateY(-1.5%) scale(1.08);
+  filter:drop-shadow(0 34px 34px rgba(7,24,45,.16));
+  transform:translateY(-1%) scale(1.12);
 }
 
 .launch-caption{
@@ -1254,8 +1251,9 @@ a{
   }
 
   .launch-product-image{
-    width:min(88%,760px);
-    max-height:610px;
+    width:min(94%,820px);
+    max-height:630px;
+    transform:scale(1.08);
   }
 
   .hero-scroll{
@@ -1298,9 +1296,9 @@ a{
   }
 
   .launch-product-image{
-    width:96%;
-    max-height:430px;
-    transform:scale(1.05);
+    width:100%;
+    max-height:450px;
+    transform:scale(1.08);
   }
 
   .product-wordmark{
@@ -1314,4 +1312,22 @@ a{
     right:5%;
     bottom:4%;
   }
+}
+
+
+.launch-product-image::after{
+  content:"";
+}
+
+.hero-launch-product .device-floor-shadow{
+  position:absolute;
+  left:50%;
+  bottom:11%;
+  width:46%;
+  height:34px;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:rgba(7,24,45,.12);
+  filter:blur(20px);
+  z-index:1;
 }
