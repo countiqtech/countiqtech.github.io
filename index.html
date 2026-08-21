@@ -30,6 +30,13 @@
       filter: contrast(1.12) brightness(0.96);
     }
 
+
+    .surgicount-3d::part(default-poster) {
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
     .surgicount-3d::part(default-progress-bar) {
       display: none;
     }
@@ -128,6 +135,9 @@
           <model-viewer
             class="hero-simple-product surgicount-3d"
             src="models/SurgiCount_V4_Web_Upright.glb"
+            poster="assets/surgicount/surgicount-hero.png"
+            reveal="auto"
+            loading="eager"
             alt="Interactive 360-degree view of the SurgiCount surgical accountability platform"
             camera-controls
             auto-rotate
