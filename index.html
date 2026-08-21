@@ -14,6 +14,33 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <style>
+    .surgicount-3d {
+      display: block;
+      width: 100%;
+      height: 520px;
+      background: transparent;
+      --poster-color: transparent;
+    }
+
+    .surgicount-3d::part(default-progress-bar) {
+      display: none;
+    }
+
+    @media (max-width: 900px) {
+      .surgicount-3d {
+        height: 430px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .surgicount-3d {
+        height: 360px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -93,9 +120,20 @@
         <div class="product-air"></div>
 
         <div class="product-float">
-          <img src="assets/surgicount/surgicount-hero.png"
-               alt="SurgiCount surgical accountability platform"
-               class="hero-simple-product">
+          <model-viewer
+            class="hero-simple-product surgicount-3d"
+            src="models/SurgiCount_V4_Web.glb"
+            alt="Interactive 360-degree view of the SurgiCount surgical accountability platform"
+            camera-controls
+            auto-rotate
+            rotation-per-second="12deg"
+            interaction-prompt="none"
+            shadow-intensity="0"
+            exposure="1"
+            environment-image="neutral"
+            disable-pan
+            touch-action="pan-y">
+          </model-viewer>
         </div>
 
         <div class="hero-simple-shadow"></div>
