@@ -1157,129 +1157,453 @@ a{
    ========================================================= */
 
 .clinical-investors{
-  padding:118px 0;
-  background:#fff;
+  position:relative;
+  overflow:hidden;
+  padding:118px 0 126px;
+
+  background:
+    radial-gradient(
+      circle at 91% 8%,
+      rgba(46,91,234,.075),
+      transparent 25%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f8fbff 100%
+    );
 }
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.clinical-investors-header{
+  display:grid;
+  grid-template-columns:1.35fr .65fr;
+  gap:90px;
+  align-items:end;
+
+  margin-bottom:76px;
+}
+
 
 .clinical-investors-intro{
-  max-width:780px;
-  margin-bottom:72px;
+  max-width:790px;
 }
 
+
 .clinical-investors-intro h2{
-  margin-bottom:22px;
+  margin-bottom:24px;
+
   color:var(--ink);
-  font-size:clamp(42px,5vw,66px);
+
+  font-size:clamp(44px,5vw,68px);
   font-weight:520;
-  line-height:1.03;
-  letter-spacing:-2.6px;
+
+  line-height:1.01;
+
+  letter-spacing:-2.8px;
 }
+
 
 .clinical-investors-intro h2 strong{
   display:block;
+
   color:var(--blue);
+
   font-weight:780;
 }
 
+
 .clinical-investors-intro > p:last-child{
-  max-width:690px;
+  max-width:700px;
+
   color:var(--muted);
+
   font-size:16px;
+
   line-height:1.85;
 }
 
 
-/* INVESTOR LIST */
+/* RIGHT INTRO STATEMENT */
 
-.clinical-investors-list{
-  border-top:1px solid var(--line);
+.clinical-investors-statement{
+  position:relative;
+
+  max-width:350px;
+
+  padding:4px 0 5px 34px;
+
+  border-left:1px solid #dce5ef;
 }
 
-.clinical-investor{
-  display:grid;
-  grid-template-columns:90px 1fr;
-  gap:34px;
 
-  padding:46px 0;
+.statement-line{
+  display:block;
 
-  border-bottom:1px solid var(--line);
+  width:28px;
+  height:3px;
+
+  margin-bottom:18px;
+
+  border-radius:20px;
+
+  background:var(--blue);
 }
 
-.clinical-investor-number{
-  padding-top:7px;
 
-  color:var(--blue);
+.statement-label{
+  margin-bottom:17px;
+
+  color:#4c5d73;
 
   font-size:11px;
   font-weight:800;
 
-  letter-spacing:1.4px;
+  line-height:1.75;
+
+  letter-spacing:2.4px;
 }
 
-.clinical-investor-content{
-  max-width:900px;
+
+.clinical-investors-statement > p:last-child{
+  color:#77869a;
+
+  font-size:13px;
+
+  line-height:1.75;
 }
 
-.clinical-investor-role{
-  margin-bottom:11px;
+
+/* =========================================================
+   INVESTOR PROFILE
+   ========================================================= */
+
+.investor-profile{
+  position:relative;
+
+  display:grid;
+
+  grid-template-columns:180px minmax(0,1.2fr) minmax(280px,.8fr);
+
+  gap:42px;
+
+  align-items:stretch;
+
+  margin-bottom:24px;
+
+  overflow:hidden;
+
+  border:1px solid #e1e8f0;
+
+  border-radius:26px;
+
+  background:rgba(255,255,255,.88);
+
+  box-shadow:
+    0 18px 55px rgba(7,24,45,.055);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+
+.investor-profile:hover{
+  transform:translateY(-3px);
+
+  border-color:#d5e0ef;
+
+  box-shadow:
+    0 25px 65px rgba(7,24,45,.085);
+}
+
+
+/* =========================================================
+   LEFT DISCIPLINE COLUMN
+   ========================================================= */
+
+.investor-index{
+  position:relative;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  min-height:310px;
+
+  padding:34px 28px;
+
+  background:
+    radial-gradient(
+      circle at 30% 28%,
+      rgba(46,91,234,.11),
+      transparent 42%
+    ),
+    linear-gradient(
+      145deg,
+      #f0f5ff,
+      #f9fbff
+    );
+}
+
+
+.investor-index > span{
+  color:var(--blue);
+
+  font-size:12px;
+  font-weight:800;
+
+  letter-spacing:1px;
+}
+
+
+.investor-discipline{
+  display:flex;
+  flex-direction:column;
+
+  gap:15px;
+}
+
+
+.discipline-mark{
+  width:54px;
+  height:54px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border:1px solid rgba(46,91,234,.18);
+
+  border-radius:50%;
+
+  background:rgba(255,255,255,.72);
+
+  color:var(--blue);
+
+  font-size:18px;
+  font-weight:800;
+
+  box-shadow:
+    0 8px 24px rgba(46,91,234,.07);
+}
+
+
+.investor-discipline p{
+  color:#718096;
+
+  font-size:9px;
+  font-weight:800;
+
+  line-height:1.65;
+
+  letter-spacing:1.7px;
+}
+
+
+/* =========================================================
+   MAIN INFORMATION
+   ========================================================= */
+
+.investor-main{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+
+  padding:42px 0;
+}
+
+
+.investor-role{
+  margin-bottom:13px;
 
   color:var(--blue);
 
   font-size:10px;
   font-weight:800;
 
-  letter-spacing:1.3px;
+  letter-spacing:1.35px;
 
   text-transform:uppercase;
 }
 
-.clinical-investor h3{
-  margin-bottom:12px;
 
+.investor-name{
+  display:flex;
+
+  align-items:baseline;
+
+  flex-wrap:wrap;
+
+  gap:12px;
+
+  margin-bottom:10px;
+}
+
+
+.investor-name h3{
   color:var(--ink);
 
-  font-size:clamp(26px,3vw,38px);
-  font-weight:720;
+  font-size:clamp(27px,2.6vw,39px);
+  font-weight:760;
 
-  line-height:1.15;
+  line-height:1.08;
 
-  letter-spacing:-1.2px;
+  letter-spacing:-1.4px;
 }
 
-.clinical-investor h3 span{
-  margin-left:7px;
 
-  color:#8795a7;
+.investor-name span{
+  color:#8997a9;
 
-  font-size:.48em;
-  font-weight:650;
-
-  letter-spacing:0;
+  font-size:13px;
+  font-weight:750;
 }
 
-.clinical-investor-speciality{
-  margin-bottom:16px;
+
+.investor-speciality{
+  max-width:670px;
 
   color:#34455a;
 
-  font-size:15px;
+  font-size:14px;
   font-weight:650;
 
-  line-height:1.6;
+  line-height:1.65;
 }
 
-.clinical-investor-note{
-  max-width:650px;
+
+.investor-accent{
+  display:block;
+
+  width:28px;
+  height:2px;
+
+  margin:21px 0 18px;
+
+  border-radius:20px;
+
+  background:var(--blue);
+}
+
+
+.investor-description{
+  max-width:680px;
 
   color:var(--muted);
 
   font-size:14px;
 
+  line-height:1.8;
+}
+
+
+/* =========================================================
+   RIGHT — INDIVIDUAL CLINICAL CONTEXT
+   ========================================================= */
+
+.investor-focus{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+
+  margin:34px 0;
+
+  padding:18px 38px;
+
+  border-left:1px solid #e1e8f0;
+}
+
+
+.focus-number{
+  margin-bottom:19px;
+
+  color:#8290a2;
+
+  font-size:9px;
+  font-weight:800;
+
+  letter-spacing:1.5px;
+}
+
+
+.investor-focus h4{
+  max-width:310px;
+
+  margin-bottom:17px;
+
+  color:var(--ink);
+
+  font-size:23px;
+  font-weight:520;
+
+  line-height:1.15;
+
+  letter-spacing:-.8px;
+}
+
+
+.investor-focus h4 strong{
+  display:block;
+
+  color:var(--blue);
+
+  font-weight:760;
+}
+
+
+.investor-focus p{
+  max-width:330px;
+
+  color:#718096;
+
+  font-size:13px;
+
   line-height:1.75;
 }
 
 
-/* ONLY FOR THIS NEW SECTION */
+/* =========================================================
+   RESPONSIVE — ONLY THIS SECTION
+   ========================================================= */
+
+@media(max-width:1000px){
+
+  .clinical-investors-header{
+    grid-template-columns:1fr;
+
+    gap:38px;
+  }
+
+
+  .clinical-investors-statement{
+    max-width:600px;
+  }
+
+
+  .investor-profile{
+    grid-template-columns:130px 1fr;
+  }
+
+
+  .investor-focus{
+    grid-column:2;
+
+    margin:0 36px 36px 0;
+
+    padding:26px 0 0;
+
+    border-left:0;
+    border-top:1px solid #e1e8f0;
+  }
+
+}
+
 
 @media(max-width:720px){
 
@@ -1287,27 +1611,83 @@ a{
     padding:82px 0;
   }
 
-  .clinical-investors-intro{
+
+  .clinical-investors-header{
     margin-bottom:52px;
   }
 
-  .clinical-investor{
-    grid-template-columns:42px 1fr;
 
-    gap:16px;
-
-    padding:34px 0;
+  .clinical-investors-intro h2{
+    font-size:clamp(40px,12vw,56px);
   }
 
-  .clinical-investor h3 span{
+
+  .clinical-investors-statement{
+    padding-left:24px;
+  }
+
+
+  .investor-profile{
     display:block;
 
-    margin:6px 0 0;
-
-    font-size:.52em;
+    border-radius:22px;
   }
-}
 
+
+  .investor-index{
+    min-height:auto;
+
+    flex-direction:row;
+
+    align-items:center;
+
+    padding:22px 24px;
+  }
+
+
+  .investor-discipline{
+    flex-direction:row;
+
+    align-items:center;
+
+    text-align:right;
+  }
+
+
+  .discipline-mark{
+    width:42px;
+    height:42px;
+
+    font-size:15px;
+  }
+
+
+  .investor-main{
+    padding:32px 24px;
+  }
+
+
+  .investor-name{
+    display:block;
+  }
+
+
+  .investor-name span{
+    display:block;
+
+    margin-top:7px;
+  }
+
+
+  .investor-focus{
+    margin:0 24px 28px;
+
+    padding:27px 0 0;
+
+    border-top:1px solid #e1e8f0;
+  }
+
+}
 
 /* CONTACT */
 .contact-section{
