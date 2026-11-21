@@ -1948,3 +1948,25 @@ a{
     display:none;
   }
 }
+/* =========================================================
+   VEINX — ISOLATED EARLY-STAGE PRODUCT TEASER
+   ========================================================= */
+.veinx-section{padding:68px 0;background:#fff;}
+.veinx-panel{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);align-items:center;min-height:340px;overflow:hidden;border-radius:28px;background:linear-gradient(115deg,#07182d 0%,#0b2542 65%,#103657 100%);color:#fff;}
+.veinx-copy{position:relative;z-index:1;padding:48px 54px;}
+.veinx-eyebrow{margin:0 0 17px;color:#8de4ef;font-size:10px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;}
+.veinx-copy h2{margin:0;color:#fff;font-size:clamp(38px,4.5vw,62px);font-weight:800;line-height:1.05;letter-spacing:-2.5px;}
+.veinx-copy h2 span{color:#37c9de;}
+.veinx-tagline{margin:12px 0 15px;color:#edf6ff;font-size:clamp(18px,2vw,24px);font-weight:600;line-height:1.3;}
+.veinx-description{max-width:650px;margin:0;color:#c4d4e4;font-size:14px;line-height:1.8;}
+.veinx-status{display:inline-flex;align-items:center;gap:9px;margin:23px 0 0;padding:8px 13px;border:1px solid rgba(141,228,239,.28);border-radius:999px;color:#d9f7fa;font-size:11px;font-weight:700;}
+.veinx-status-dot{width:7px;height:7px;border-radius:50%;background:#37c9de;}
+.veinx-notice{margin:13px 0 0;color:#92a9bf;font-size:10px;line-height:1.5;}
+.veinx-art{position:relative;display:flex;align-items:center;justify-content:center;min-height:340px;overflow:hidden;isolation:isolate;background:radial-gradient(circle at 55% 50%,rgba(55,201,222,.18),transparent 54%);}
+.veinx-art-orbit{position:absolute;width:280px;height:280px;border:1px solid rgba(141,228,239,.17);border-radius:50%;transform:rotate(-25deg) scaleX(.72);}
+.veinx-art-orbit-two{width:390px;height:390px;border-color:rgba(141,228,239,.09);transform:rotate(32deg) scaleX(.7);}
+.veinx-art-center{position:relative;display:flex;align-items:baseline;color:#fff;font-size:clamp(85px,11vw,150px);font-weight:800;letter-spacing:-12px;line-height:1;filter:drop-shadow(0 14px 32px rgba(0,0,0,.25));}
+.veinx-art-center strong{color:#37c9de;font-weight:800;}
+.veinx-art-label{position:absolute;bottom:29px;color:#7fa9c0;font-size:9px;font-weight:800;letter-spacing:1.6px;}
+@media(max-width:900px){.veinx-panel{grid-template-columns:1fr;}.veinx-copy{padding:42px 38px 24px;}.veinx-art{min-height:190px;}.veinx-art-center{font-size:100px;}.veinx-art-orbit{width:200px;height:200px;}.veinx-art-orbit-two{width:290px;height:290px;}.veinx-art-label{bottom:15px;}}
+@media(max-width:600px){.veinx-section{padding:50px 0;}.veinx-panel{border-radius:20px;}.veinx-copy{padding:34px 25px 16px;}.veinx-copy h2{font-size:clamp(36px,10vw,48px);letter-spacing:-1.7px;}.veinx-description{font-size:13px;}.veinx-art{min-height:155px;}.veinx-art-center{font-size:76px;letter-spacing:-7px;}.veinx-art-label{font-size:8px;}}
