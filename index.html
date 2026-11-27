@@ -711,6 +711,7 @@
       <a href="#progress">Progress</a>
       <a href="#company">Company</a>
       <a href="mailto:careers@countiq.in">Careers</a>
+      <button type="button" id="ciqAnalyticsSettings" style="font:inherit;color:inherit;background:none;border:0;padding:0;text-align:left;cursor:pointer;text-decoration:underline">Analytics preferences</button>
     </div>
 
   </div>
@@ -749,6 +750,65 @@
   window.addEventListener('scroll', () => {
     siteHeader.classList.toggle('scrolled', window.scrollY > 20);
   });
+</script>
+
+
+<!-- Optional analytics: loaded only after explicit consent -->
+<dialog id="ciqAnalyticsDialog" aria-labelledby="ciqAnalyticsTitle" style="max-width:420px;width:calc(100% - 32px);padding:24px;border:1px solid #dbe3ea;border-radius:14px;color:#14283c;background:white;font:15px/1.5 system-ui;box-sizing:border-box">
+  <h2 id="ciqAnalyticsTitle" style="font-size:20px;margin:0 0 12px">Analytics preferences</h2>
+  <p>With your permission, CountIQ uses Google Analytics to measure website visits, traffic sources and engagement. Google may use analytics cookies and process device and usage information. You can decline or change your choice at any time.</p>
+  <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google privacy policy</a></p>
+  <div style="display:flex;gap:12px;flex-wrap:wrap">
+    <button type="button" id="ciqDecline" style="padding:10px 16px;border:1px solid #163c66;background:white;color:#163c66;border-radius:6px;cursor:pointer">Decline</button>
+    <button type="button" id="ciqAccept" style="padding:10px 16px;border:1px solid #163c66;background:#163c66;color:white;border-radius:6px;cursor:pointer">Accept analytics</button>
+  </div>
+</dialog>
+<script>
+(() => {
+  const id = 'G-Y4FEE0BM5S';
+  const key = 'countiq_analytics_consent_v1';
+  const dialog = document.getElementById('ciqAnalyticsDialog');
+  let choice = null;
+  try { choice = localStorage.getItem(key); } catch (_) {}
+  let loaded = false;
+  window['ga-disable-' + id] = choice !== 'accepted';
+  function startAnalytics() {
+    window['ga-disable-' + id] = false;
+    if (loaded) return;
+    loaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function(){ window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', id, {allow_google_signals:false, allow_ad_personalization_signals:false});
+    const tag = document.createElement('script');
+    tag.async = true;
+    tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+    document.head.appendChild(tag);
+  }
+  function save(value) {
+    choice = value;
+    try { localStorage.setItem(key, value); } catch (_) {}
+    dialog.close();
+    if (value === 'accepted') startAnalytics();
+    else {
+      window['ga-disable-' + id] = true;
+      document.cookie.split(';').forEach(entry => {
+        const name = entry.split('=')[0].trim();
+        if (name === '_ga' || name.startsWith('_ga_')) {
+          ['', '; domain=countiq.in', '; domain=.countiq.in'].forEach(domain => {
+            document.cookie = name + '=; Max-Age=0; path=/' + domain;
+          });
+        }
+      });
+    }
+  }
+  document.getElementById('ciqAccept').addEventListener('click', () => save('accepted'));
+  document.getElementById('ciqDecline').addEventListener('click', () => save('declined'));
+  document.getElementById('ciqAnalyticsSettings').addEventListener('click', () => dialog.showModal());
+  dialog.addEventListener('cancel', event => { event.preventDefault(); save('declined'); });
+  if (choice === 'accepted') startAnalytics();
+  else if (choice !== 'declined') dialog.showModal();
+})();
 </script>
 
 </body>
